@@ -159,6 +159,7 @@ BEGIN_MESSAGE_MAP(TooieRandoDlg, CDialog)
 	ON_BN_CLICKED(IDC_LOGIC_TRACKER_BUTTON, &TooieRandoDlg::OnBnClickedLogicTrackerButton)
 	ON_BN_CLICKED(IDC_EXPORT_SETTINGS_BUTTON, &TooieRandoDlg::OnBnClickedExportSettingsButton)
 	ON_BN_CLICKED(IDC_IMPORT_SETTINGS_BUTTON, &TooieRandoDlg::OnBnClickedImportSettingsButton)
+	ON_COMMAND(IDOK, &TooieRandoDlg::OnIdok)
 END_MESSAGE_MAP()
 
 
@@ -2860,6 +2861,10 @@ std::vector<int> TooieRandoDlg::GetIdsFromNameSelection(std::vector<std::string>
 		{
 			returnIds.push_back(Prop_Ticket);
 		}
+		if (names[ObjectTypeIndex] == ("Nests"))
+		{
+			returnIds.push_back(Prop_BoggyFish);
+		}
 		if (names[ObjectTypeIndex] == ("Misc")) //Stuff like the fish
 		{
 			returnIds.push_back(Prop_BoggyFish);
@@ -3698,6 +3703,7 @@ CString TooieRandoDlg::GetTempFileString(CString filePath)
 {
 	return filePath + "_modified.bin";
 }
+
 void TooieRandoDlg::RandomizeMoves(LogicHandler::AccessibleThings state)
 {
 	char message[256];
@@ -4383,3 +4389,8 @@ void TooieRandoDlg::OnBnClickedImportSettingsButton()
 	fileOpen = m_ldFile.GetPathName();
 	LoadOptions(fileOpen);
 }
+
+void TooieRandoDlg::OnIdok()
+{
+}
+
