@@ -3,7 +3,7 @@
 //Does Lead to neither bottles nor king jingaling being saved because cutscene wont play
 OptionName:"Minimum Goals",Active:always,Flags:[],LookupID:"MinimumGoals",OptionType:"value",CurrentValue:"1",DefaultValue:"1",RandomizerExclusive:true,
 //Goals that use normal flags are positive values, negative values are the ObjectId values from "RandomizerAddresses.txt" of places that spawn an object when you complete some task
-OptionName:"End Goals",Active:always,Flags:[39B,437,086,18C,31B,-150,-299,-205],LookupID:"EndGoals",DefaultValue:"Hag1JiggyGoal",OptionType:"multiselect",PossibleSelections:[Hag1JiggyGoal,BoggyFishEaten,KingCoal,Weldar,GeorgeMelted,LoggoUnclog,MingyJongo,TerryBoss],RandomizerExclusive:true,
+OptionName:"End Goals",Active:always,Flags:[39B,086,18C,-299,-205,437,9C,36F,377,1D6,1D5,31B,-150,],LookupID:"EndGoals",DefaultValue:"Hag1JiggyGoal",OptionType:"multiselect",PossibleSelections:[Hag1JiggyGoal,KingCoal,Weldar,MingyJongo,TerryBoss,MrPatch,Targitzan,LordWooFakFak,ChilliBilli,ChillyWilly,BoggyFishEaten,GeorgeMelted,LoggoUnclog],RandomizerExclusive:true,
 OptionName:"Turn Off Logic",Active:false,LookupID:"LogicDisabled",RandomizerExclusive:true,
 OptionName:"Randomize Worlds",Active:true,LookupID:"WorldsRandomized",RandomizerExclusive:true,
 OptionName:"Cauldron Keep Included In world Rando",Active:false,LookupID:"CKRando",RandomizerExclusive:true,
